@@ -1,0 +1,40 @@
+<head>
+    <title>Notas</title>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Calculando Sueldo</h1>
+            <section class="contenido-principal">
+                <div class="row">
+                    <div class="col ">
+                        <form id="calcular-salario"  method="POST" action="php/sueldo.php">
+                            <div class="form-group">
+                                
+			<label for="nombre">Nombre del vendedor</label>
+                                <input type="text" class="form-control" id="txtnombre" name="txtnombre"  placeholder="Ingresar nombre del vendedor">
+                            </div>
+                            <div class="form-group">
+                                <label for="autos">Automoviles vendidos</label>
+                                <input type="text"  class="form-control" id="txtvendidos" name="txtvendidos"  placeholder="Cantidad de vehiculos vendidos">
+                            </div>
+                            <div class="form-group">
+                                <label for="precio">Precio Total</label>
+                                <input type="text"  class="form-control" id="txttottalvendidos"name="txttotalvendidos" placeholder="Precio Total de Automoviles vendidos">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Calcular</button>
+    
+                            </form>
+                    </div>
+                    </div>
+            </section>    
+    
+        </div>    
+    <script src="js/validando.js"></script>
+    </body>
+    </html>
