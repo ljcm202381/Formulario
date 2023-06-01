@@ -14,6 +14,7 @@ var mf = {
 
 			pf.entradas[i].addEventListener("focus", mf.enFoco);
 			pf.entradas[i].addEventListener("blur", mf.fueraFoco)
+			
 
 		}
 
@@ -39,6 +40,24 @@ var mf = {
 
 		
 
+	},
+	validarcampos:function()
+	{
+      
+        // Leer del formulario 
+     const nombre = document.querySelector('#txtnombre').value;
+     const cantidad = Number( document.querySelector('#txtvendidos').value);
+     const totalventa = Number( document.querySelector('#txttottalvendidos').value)
+
+      // Comprobar que los campos no esten vacios
+     if(nombre === '' || cantidad === '' || totalventa === '')
+      {
+      	alert("Todos los campos son obligatorios");
+
+      }else if(cantidad <= 0 || totalventa <=0 || isNaN(totalventa) || isNaN(cantidad )) {
+
+          alert("Debe ingresar valores validos");
+     }
 	}
 
 }

@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 function comisiones(){
 $Empleado = $_POST['txtnombre'];
 $Canti = $_POST['txtvendidos'];
