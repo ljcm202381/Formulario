@@ -25,6 +25,12 @@ if($Edad <= 18)
     print("es menor de edad");
 }
 
+//ciclos for
+for($i=1;$i<=5;$i++)
+{
+    echo "".$i;
+}
+
 
 
 
